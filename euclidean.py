@@ -1,4 +1,4 @@
-a = 9101273416; b = 9101273416;
+a = 9101273416; b = 9101273417;
 
 s = 0
 olds = 1
@@ -16,14 +16,14 @@ while r != 0:
 print 'Bezout coefficients:', (olds, oldt)
 print 'greatest common divisor:', oldr
 print 'quotients by the gcd:' , (t, s)
-u1 = oldt * a
-u2 = olds * b
+u1 = oldt * b
+u2 = olds * a
 print 'U1 : ', u1, ' U2: ', u2
 plzbeone = u1+u2
 print 'u1 + u2 = ',plzbeone
 a1 = 123456789
 a2 = 987654321
-x = a1*u1 + a2*u2
+x = a1*u1 + a2*u2 +a*b
 print 'x = ', x
 print 'a_1 mod p_1 = ', (a1%a)
 print 'a_2 mod p_2 = ', (a2%b)
